@@ -1,0 +1,3 @@
+#max.bash aims to get the one-day, three-day, seven-day maximum statistics. 
+#standardize_average.bash aims to standardize netCDF files and average variables to the get mean value.
+#mask.bash aims to mask date.nc based on hist.sh.SWE.nc
