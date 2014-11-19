@@ -1,0 +1,35 @@
+2014-05-19 15:56:50.128 [NotebookApp] Using existing profile dir: u'/net/jet/home/jiawei/.ipython/profile_default'
+2014-05-19 15:56:50.143 [NotebookApp] Using MathJax from CDN: http://cdn.mathjax.org/mathjax/latest/MathJax.js
+2014-05-19 15:56:50.155 [NotebookApp] The port 8888 is already in use, trying another random port.
+2014-05-19 15:56:50.156 [NotebookApp] Serving notebooks from local directory: /usr1/jiawei/homework/nb/precipitation
+2014-05-19 15:56:50.156 [NotebookApp] The IPython Notebook is running at: http://127.0.0.1:8889/
+2014-05-19 15:56:50.156 [NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+2014-05-19 15:57:33.521 [tornado.general] WARNING | 404 GET /56d71715-6732-4bd3-b4a7-6e265bdf5486 (127.0.0.1): Notebook does not exist: 56d71715-6732-4bd3-b4a7-6e265bdf5486
+2014-05-19 15:57:33.521 [tornado.access] WARNING | 404 GET /56d71715-6732-4bd3-b4a7-6e265bdf5486 (127.0.0.1) 0.68ms
+2014-05-19 15:57:33.567 [tornado.access] WARNING | 404 GET /favicon.ico (127.0.0.1) 0.80ms
+2014-05-19 15:57:40.181 [tornado.application] ERROR | Uncaught exception POST /kernels?notebook=1033cfa6-3b06-4023-b812-be3c376a2bf0 (127.0.0.1)
+HTTPRequest(protocol='http', host='localhost:8889', method='POST', uri='/kernels?notebook=1033cfa6-3b06-4023-b812-be3c376a2bf0', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '0', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': 'localhost:8889', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:24.0) Gecko/20100101 Firefox/24.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Pragma': 'no-cache', 'Cache-Control': 'no-cache', 'Referer': 'http://localhost:8889/1033cfa6-3b06-4023-b812-be3c376a2bf0'})
+Traceback (most recent call last):
+  File "/usr1/jiawei/anaconda/lib/python2.7/site-packages/tornado/web.py", line 1218, in _when_complete
+    callback()
+  File "/usr1/jiawei/anaconda/lib/python2.7/site-packages/tornado/web.py", line 1239, in _execute_method
+    self._when_complete(method(*self.path_args, **self.path_kwargs),
+  File "/usr1/jiawei/anaconda/lib/python2.7/site-packages/tornado/web.py", line 2395, in wrapper
+    return method(self, *args, **kwargs)
+  File "/usr1/jiawei/anaconda/lib/python2.7/site-packages/IPython/html/services/kernels/handlers.py", line 46, in post
+    kernel_id = km.start_kernel(notebook_id, cwd=nbm.notebook_dir)
+  File "/usr1/jiawei/anaconda/lib/python2.7/site-packages/IPython/html/services/kernels/kernelmanager.py", line 86, in start_kernel
+    kernel_id = super(MappingKernelManager, self).start_kernel(**kwargs)
+  File "/usr1/jiawei/anaconda/lib/python2.7/site-packages/IPython/kernel/multikernelmanager.py", line 115, in start_kernel
+    km.start_kernel(**kwargs)
+  File "/usr1/jiawei/anaconda/lib/python2.7/site-packages/IPython/kernel/manager.py", line 196, in start_kernel
+    self.write_connection_file()
+  File "/usr1/jiawei/anaconda/lib/python2.7/site-packages/IPython/kernel/connect.py", line 478, in write_connection_file
+    signature_scheme=self.session.signature_scheme,
+  File "/usr1/jiawei/anaconda/lib/python2.7/site-packages/IPython/kernel/connect.py", line 143, in write_connection_file
+    with open(fname, 'w') as f:
+IOError: [Errno 122] Disk quota exceeded: u'/net/jet/home/jiawei/.ipython/profile_default/security/kernel-969c108f-a9ad-47a2-b802-fb6a4b5e8765.json'
+2014-05-19 15:57:40.183 [tornado.access] ERROR | 500 POST /kernels?notebook=1033cfa6-3b06-4023-b812-be3c376a2bf0 (127.0.0.1) 15.42ms
+
+
+

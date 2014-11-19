@@ -1,0 +1,3 @@
+Impossible to save the screenshot to file:///nfs/jet/home/jiawei/Desktop/Screenshot.png.
+ Error was Error opening file '/nfs/jet/home/jiawei/Desktop/Screenshot.png': Disk quota exceeded.
+ Please choose another location and retry.
