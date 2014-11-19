@@ -3,6 +3,7 @@ labWork
 [Example of data analysis of time series][1]
 
 [Example of visualization of spatial maps (1)][2]
+
 [Example of visualization of spatial maps (2)][3]
 
 [1]:http://nbviewer.ipython.org/github/jiaweih/labWork/blob/master/notebooks/meeting/timeseries_meeting_two_models.ipynb
